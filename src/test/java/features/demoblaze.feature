@@ -19,9 +19,10 @@
 
 Feature: Testing Sign-up button
 
-  @regression
+  @regression @check
   Scenario: Clicking on sign-up button on homepage
     Given User must be on homepage url "https://demoblaze.com/"
     When User clicks on sign-up button
     Then Sign-up dialog box should be displayed
+    
     
