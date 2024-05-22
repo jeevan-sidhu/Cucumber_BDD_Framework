@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-20T21:18:29 EDT" name="parallelTestNg" finished-at="2024-05-20T21:18:50 EDT" duration-ms="21234">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:test_runner.TestNgRunner@4b2bac3f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-05-20T21:18:29 EDT" name="ParallelTests" finished-at="2024-05-20T21:18:50 EDT" duration-ms="21234">
+      <class name="test_runner.TestNgRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:test_runner.TestNgRunner@4b2bac3f]" started-at="2024-05-20T21:18:29 EDT" name="setUpClass" finished-at="2024-05-20T21:18:29 EDT" duration-ms="544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2617f816]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:test_runner.TestNgRunner@4b2bac3f]" started-at="2024-05-20T21:18:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-20T21:18:39 EDT" duration-ms="10038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Forgot password link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Facebook Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:test_runner.TestNgRunner@4b2bac3f]" started-at="2024-05-20T21:18:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-20T21:18:39 EDT" duration-ms="10122" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Facebook Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:test_runner.TestNgRunner@4b2bac3f]" started-at="2024-05-20T21:18:39 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-20T21:18:47 EDT" duration-ms="7873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:test_runner.TestNgRunner@4b2bac3f]" started-at="2024-05-20T21:18:39 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-20T21:18:49 EDT" duration-ms="9683" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Google search and verify title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test_runner.TestNgRunner@4b2bac3f]" started-at="2024-05-20T21:18:49 EDT" name="tearDownClass" finished-at="2024-05-20T21:18:50 EDT" duration-ms="829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- test_runner.TestNgRunner -->
+    </test> <!-- ParallelTests -->
+  </suite> <!-- parallelTestNg -->
+</testng-results>

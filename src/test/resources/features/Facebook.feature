@@ -17,10 +17,16 @@
 ## (Comments)
 #Sample Feature Definition Template
 
-Feature: Open Google
+    
+Feature: Facebook Page
 
-  @regression
-  Scenario: Open Google homepage
-    Given User must be on homepage url "https://google.com/"
-    
-    
+  Background: Facebook homepage should be opened
+    Given User must be on homepage "https://facebook.com/"
+
+  @fb
+  Scenario: Verify Title
+    Then Title should contain "Facebook"
+
+  @fb
+  Scenario: Verify Forgot password link
+    Then Forgot password link should be displayed

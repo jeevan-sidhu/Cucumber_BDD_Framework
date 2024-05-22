@@ -16,11 +16,16 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
+Feature: Google Page
 
-Feature: Open Facebook
+  Background: Google homepage should be opened
+    Given User must be on homepage "https://google.com/"
 
-  @regression
-  Scenario: Open Facebook homepage
-    Given User must be on homepage url "https://facebook.com/"
-    
-    
+  @google
+  Scenario: Verify Title
+    Then Title should be "Google"
+
+  @google
+  Scenario: Google search and verify title
+    When Search for "iPhone" in search box
+    Then Title should contain "iPhone"

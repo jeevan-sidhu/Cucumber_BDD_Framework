@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -50,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 19, 2024 07:32:46 p.m.</span>
+			<span class='label blue darken-3 suite-start-time'>May 20, 2024 09:20:22 p.m.</span>
 			</a>
 		</ul>
 	</div>
@@ -65,7 +64,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -77,8 +76,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@check</a></li>
-					<li><a href='#'>@regression</a></li>
+					<li><a href='#'>@google</a></li>
+					<li><a href='#'>@fb</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -120,12 +119,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$0%'>
-                    <span class='strong'>0</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='strong'>2</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
-                    1</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -138,12 +137,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'>
-                    <span class='strong'>0</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>4</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
-                    1</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -158,12 +157,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='66%'>
-                    <span class='strong'>2</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>9</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='33%'>
-                    1</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> steps failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -186,11 +185,11 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Testing Sign-up button</span>
-						<span class='test-time'>May 19, 2024 07:32:47 p.m.</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-name'>Facebook Page</span>
+						<span class='test-time'>May 20, 2024 09:20:23 p.m.</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -200,42 +199,124 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='2' status='fail'>
+<div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 10.717</span>
+	<span class='duration right label'>00 00 08.340</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Clicking on sign-up button on homepage</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Forgot password link</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@regression</span>
-				<span class='category label'>@check</span>
+				<span class='category label'>@fb</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='4' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(step_definition.Demoblaze_Step_Definition.user_must_be_on_homepage_url(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User must be on homepage url "https://demoblaze.com/"</div>
+		<li test-id='9' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(step_definition.GoogleStepDefs.user_must_be_on_homepage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User must be on homepage "https://facebook.com/"</div>
 
 
 		</li>
-		<li test-id='5' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(step_definition.Demoblaze_Step_Definition.user_clicks_on_sign_up_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks on sign-up button</div>
+		<li test-id='13' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(step_definition.FbStepDefs.forgot_password_link_should_be_displayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Forgot password link should be displayed</div>
 
 
 		</li>
-		<li test-id='6' class='node then Fail' status='Fail'>
-			<div class="step-name" title="(step_definition.Demoblaze_Step_Definition.sign_up_dialog_box_should_be_displayed())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then Sign-up dialog box should be displayed</div>
+	</ul>
+</div>
+<div class='scenario node' test-id='3' status='pass'>
+
+	<span class='duration right label'>00 00 07.819</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Title</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@fb</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='8' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(step_definition.GoogleStepDefs.user_must_be_on_homepage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User must be on homepage "https://facebook.com/"</div>
 
 
-					<textarea disabled class="code-block">java.lang.AssertionError: expected:<false> but was:<true>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:120)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at step_definition.Demoblaze_Step_Definition.sign_up_dialog_box_should_be_displayed(Demoblaze_Step_Definition.java:36)
-	at ✽.Sign-up dialog box should be displayed(file:///C:/Users/jvnsi/eclipse-workspace/BDD_framework/src/test/java/features/demoblaze.feature:26)
-</textarea>
+		</li>
+		<li test-id='10' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(step_definition.GoogleStepDefs.title_should_contain(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Title should contain "Facebook"</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>Google Page</span>
+						<span class='test-time'>May 20, 2024 09:20:31 p.m.</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='17' status='pass'>
+
+	<span class='duration right label'>00 00 08.375</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Title</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@google</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='23' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(step_definition.GoogleStepDefs.user_must_be_on_homepage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User must be on homepage "https://google.com/"</div>
+
+
+		</li>
+		<li test-id='25' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(step_definition.GoogleStepDefs.title_should_be(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Title should be "Google"</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='20' status='pass'>
+
+	<span class='duration right label'>00 00 09.807</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Google search and verify title</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@google</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='24' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(step_definition.GoogleStepDefs.user_must_be_on_homepage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User must be on homepage "https://google.com/"</div>
+
+
+		</li>
+		<li test-id='28' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(step_definition.GoogleStepDefs.search_for_in_search_box(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Search for "iPhone" in search box</div>
+
+
+		</li>
+		<li test-id='29' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(step_definition.GoogleStepDefs.title_should_contain(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Title should contain "iPhone"</div>
+
+
 		</li>
 	</ul>
 </div>
@@ -283,15 +364,15 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@check</span>
+						<span class='category-name'>@google</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -305,9 +386,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 19, 2024 07:32:47 p.m.</td>
-										<td class='linked' test-id='2'>Clicking on sign-up button on homepage</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>May 20, 2024 09:20:31 p.m.</td>
+										<td class='linked' test-id='17'>Verify Title</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 20, 2024 09:20:31 p.m.</td>
+										<td class='linked' test-id='20'>Google search and verify title</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -316,15 +402,15 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@regression</span>
+						<span class='category-name'>@fb</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -338,9 +424,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 19, 2024 07:32:47 p.m.</td>
-										<td class='linked' test-id='2'>Clicking on sign-up button on homepage</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>May 20, 2024 09:20:23 p.m.</td>
+										<td class='linked' test-id='2'>Verify Forgot password link</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 20, 2024 09:20:23 p.m.</td>
+										<td class='linked' test-id='3'>Verify Title</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -356,69 +447,7 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.AssertionError</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 19, 2024 07:32:56 p.m.</td>
-										<td class='linked' test-id='6'>Then Sign-up dialog box should be displayed</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: expected:<false> but was:<true>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:120)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at step_definition.Demoblaze_Step_Definition.sign_up_dialog_box_should_be_displayed(Demoblaze_Step_Definition.java:36)
-	at ✽.Sign-up dialog box should be displayed(file:///C:/Users/jvnsi/eclipse-workspace/BDD_framework/src/test/java/features/demoblaze.feature:26)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -426,37 +455,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 19, 2024 07:32:46 p.m.</div>
+					<div class='panel-lead'>May 20, 2024 09:20:22 p.m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 19, 2024 07:32:57 p.m.</div>
+			 		<div class='panel-lead'>May 20, 2024 09:20:41 p.m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 11.466</div>
+					<div class='panel-lead'>00 00 18.736</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -472,21 +501,21 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@check</td>
+							<td>@google</td>
+							<td>2</td>
 							<td>0</td>
-							<td>1</td>
 							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
-							<td>@regression</td>
+							<td>@fb</td>
+							<td>2</td>
 							<td>0</td>
-							<td>1</td>
 							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -500,24 +529,24 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+                parentCount: 2,
+				passParent: 2,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 1,
-				passChild: 0,
-				failChild: 1,
+				childCount: 4,
+				passChild: 4,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 3,
-				passGrandChild: 2,
-				failGrandChild: 1,
+				grandChildCount: 9,
+				passGrandChild: 9,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
@@ -528,7 +557,7 @@
 		
 		<script>
 			var timeline = {
-			        "Testing Sign-up button":10.727
+			        "Facebook Page":8.345,"Google Page":10.292
 			};
 		</script>
 		

@@ -33,6 +33,6 @@ public class Demoblaze_Step_Definition {
 	@Then("Sign-up dialog box should be displayed")
 	public void sign_up_dialog_box_should_be_displayed() {
 		boolean actual = driver.findElement(By.cssSelector("#signInModal > div > div > div.modal-body")).isDisplayed();
-		Assert.assertEquals(false,actual);
+		Assert.assertEquals(true,actual);
 	}
 }

@@ -1,5 +1,7 @@
 package hooks;
 
+import java.util.Properties;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -9,16 +11,25 @@ import driverManager.CreateDriverSingleton;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import utilities.ConfigReader;
 
 public class Hooks {
 	private WebDriver driver;
+	private ConfigReader cr;
+	Properties prop;
 	
-	@Before()
-	public void setup(Scenario scenario) {
-		String browser = "Firefox";
-		CreateDriverSingleton.getInstance().setDriver(browser);
+	@Before(order=0)
+	public void get_property() {
+		cr = new ConfigReader();
+		prop = cr.LoadConfig();
+	}
+	
+	@Before(order=1)
+	public void launch_browser() {
+		CreateDriverSingleton.getInstance().setDriver(prop.getProperty("browser"));
 		driver = CreateDriverSingleton.getInstance().getDriver();
 //		driver = new DriverFactory().initDriver(browser);
+//		driver.manage().window().maximize();
 	}
 	
 	
